@@ -4,8 +4,8 @@
     "agent": "./src/agents/main.py:agent",
     "simple": "./src/agents/simple.py:agent",
     "practica_simple": "./src/agents/practica_simple.py:agent",
-    "rag": "./src/agents/rag.py:agent"
-
+    "rag": "./src/agents/rag.py:agent",
+    "rag_prod": "./src/agents/support/agent.py:agent"
     },
     "env": ".env"
    

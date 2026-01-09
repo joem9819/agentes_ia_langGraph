@@ -28,3 +28,16 @@ uv add ipykernel --dev
 # install the project
 uv pip install -e .
 # Instala el proyecto en modo editable para desarrollo
+
+
+echo "# agentes_ia_langGraph" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/joem9819/agentes_ia_langGraph.git
+git push -u origin main
+
+git remote add origin https://github.com/joem9819/agentes_ia_langGraph.git
+git branch -M main
+git push -u origin main

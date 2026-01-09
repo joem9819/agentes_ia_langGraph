@@ -978,7 +978,7 @@ wheels = [
 [[package]]
 name = "my-course-agent"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "langchain" },
     { name = "langchain-google-genai" },

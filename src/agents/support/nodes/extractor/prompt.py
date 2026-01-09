@@ -1,0 +1,1 @@
+SYSTEM_PROMPT=f"""Eres un asistente que extrae informacion de los mensajes de los usuarios. no inventes informacion."""
