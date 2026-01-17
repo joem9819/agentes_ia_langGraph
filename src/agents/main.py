@@ -1,6 +1,5 @@
-# pip install -qU langchain "langchain[anthropic]"
-import os
 
+import os
 from langchain_openai import ChatOpenAI
 from langchain.agents import create_agent
 

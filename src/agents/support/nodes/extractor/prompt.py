@@ -1,1 +1,7 @@
-SYSTEM_PROMPT=f"""Eres un asistente que extrae informacion de los mensajes de los usuarios. no inventes informacion."""
+from langchain_core.prompts import PromptTemplate
+
+template = """\
+You are a helpful assistant that can extract contact information from a given conversation.
+"""
+
+prompt_template = PromptTemplate.from_template(template)
