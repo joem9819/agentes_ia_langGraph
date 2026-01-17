@@ -41,3 +41,7 @@ git push -u origin main
 git remote add origin https://github.com/joem9819/agentes_ia_langGraph.git
 git branch -M main
 git push -u origin main
+
+
+instalar:uv add fastapi[standard]
+lanzar fastApi:uv run fastapi dev ./src/api/main.py

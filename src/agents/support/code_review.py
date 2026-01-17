@@ -43,7 +43,7 @@ def security_review(state: State):
         'security_review': security_review
         }
 
-def maintainability_review(state: State):
+def maintainability_review(state: State):   
     code = state['code']
     messages = [
         ("system", "Eres experto en calidad de código. Te centras en la estructura del código, legibilidad y cumplimiento con las mejores prácticas."),
