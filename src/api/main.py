@@ -19,10 +19,34 @@ class Message(BaseModel):
 
 @app.post("/chat/{chat_id}")
 def chat(chat_id: str, item: Message):
+    ##CRUD add message
+    config = {
+        "configurable": {
+            "thread_id": chat_id,
+        }
+    }
     human_message = HumanMessage(content=item.message)
-    response = agent.invoke({ "message": human_message})
+    response = agent.invoke({ "message": human_message}, config)
     last_message = response.get("messages", [])[ -1 ]
     return last_message.text
+
+
+# @app.post("/chat/{chat_id}")
+# async def chat(chat_id: str, item: Message):
+#     # CRUD add message
+#     config = {
+#         "configurable": {
+#             "thread_id": chat_id,
+#         }
+#     }
+#     human_message = HumanMessage(content=item.message)
+#     agent = make_graph(config={"checkpointer": checkpointer})
+#     state = {"messages": [human_message]}
+#     response = agent.invoke(state, config)
+#     last_message = response["messages"][-1]
+#     # CRUD add message
+#     return response["messages"]
+
 
 
 @app.post("/chat/{chat_id}/stream")
